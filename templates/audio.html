@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="bckgnd">
+<div class="panel panel-info text-center">
+   <div class="panel-heading"><h2>MusicHub Audios</h2></div>
+</div>
+
+ <audio id="AudioElement" width="1000" height="700" controls muted src="/media/{{auds.file_name}}"  type="audio/mp3" class="audio-responsive"></audio>
+
+<div class="container-fluid bg-2 text-center">
+  <div class="row">
+
+  </div>
+</div><br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container-fuild">
+<div class="jumbotron text-center">
+  <h1> DENGIMA MUSIC Dashbaord <h3> Welcome username </h3></h1>
+</div class="container-fuild center">
+<a class="btn btn-primary btn-md" href="{% url 'upload_music' %}">Music Dashboard</a>
+<a class="btn btn-primary btn-md" href="{% url 'upload_image' %}">Image Dasboard</a>
+<a class="btn btn-primary btn-md" href="{% url 'uploads_news' %}">News Dasboard</a>
+<hr>
+</div>
+
+{% endblock %}
+s

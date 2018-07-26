@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<br>
+<div class="bckgnd">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="container-fluid">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <video id="VideoElement" width="1000" height="700" controls muted src="static/gradvideo/DSC_0129.mp4"  type="video/mp4" class="video-responsive"></video>
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+            <div class="item">
+        <video id="VideoElement" width="1000" height="700" controls muted src="static/gradvideo/DSC_0128.mp4"  type="video/mp4" class="video-responsive"></video>
+        <div class="carousel-caption">
+        <h4>Roy and the dancers</h4>
+
+        </div>
+      </div>
+            <div class="item">
+        <video id="VideoElement" width="1000" height="700" controls muted src="static/gradvideo/DSC_0126.mp4"  type="video/mp4" class="video-responsive"></video>
+        <div class="carousel-caption">
+        		<h4>Roy and the dancers</h4>
+        </div>
+      </div>
+            <div class="item ">
+        <video id="VideoElement" width="1000" height="700" controls muted src="static/gradvideo/DSC_0110.mp4"  type="video/mp4" class="video-responsive"></video>
+        <div class="carousel-caption">
+        <h4>Roy the dancer</h4>
+
+        </div>
+      </div>
+            <div class="item">
+        <video id="VideoElement" width="1000" height="700" controls muted src="static/gradvideo/DSC_0111.mp4"  type="video/mp4" class="video-responsive"></video>
+        <div class="carousel-caption">
+        		<h4>Break dancer</h4>
+        </div>
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+	<h3>schooldancers entertaining the guest on the 11th graduation cermony 2018 at Galaxy International School Uganda</h3>
+
+
+
+
+
+
+<!--	<h3 class="item-title">Deserunt mollitia animi</h3>
+	<span class="year">2014</span>
+		<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-download">Download</span></a>
+		<a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-tick">Play</span></a>
+		<a href="#" class="btn btn-info btn-xs">Like</a>-->
+
+<script type="text/javascript">
+	var likes = 0;// global variable
+	function like(){
+		document.getElementById("show").innerHTML=likes;
+		likes = likes - 1;
+	}
+	var likes = 1;// global variable
+	document.getElementById("list").innerHTML=likes;
+	likes = likes - 1;
+	}
+					
+</script>
+		<!--<br><br><br>
+		<button onclick="like()">Like<p id="show" type="text"></p></button>
+
+		<p id="list" type="text"></p>-->
+
+</div>
+
+
+{% endblock %}

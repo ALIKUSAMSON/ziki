@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<form action="{% url 'uploads_news' %}" method="post" enctype="multipart/form-data">
+	
+	{% csrf_token %}
+	
+	{{ form|crispy}}
+	
+	<input type="submit" name="" value="upload">
+</form>
+
+{% endblock %}
